@@ -1,0 +1,83 @@
+
+.form-group{
+    margin-left: 150px;
+    padding: 20px;
+
+}
+.Monday{
+    margin-right: 50px;
+} 
+.Tuesday{
+    margin-right: 50px;
+}
+
+.Wenesday{
+    margin-right: 50px;
+
+}
+.Thursday{
+    margin-right: 50px;
+
+}
+.Friday{
+    margin-right: 50px;
+
+}
+.Saturday{
+    margin-right: 50px;
+
+}
+.Buttoms{
+    margin-left: 220px;
+    border: 20px;
+    padding: 20px;
+
+}
+.col-lg-10{
+    margin-left: 450px;
+    
+}
+.Recomendacion{
+    padding: 10px;
+    margin-left: 5px;
+}
+.Boton-Aceptar{
+    -webkit-margin-start: 0%
+}
+.texto-blanco2{
+    margin-left: 100px;
+    color: white;
+
+}
+.texto-blanco{
+    margin-left: 50px;
+    
+    color: white;
+
+}
+.Carrera{
+    
+    border-width: 2px;
+    padding: 5px;
+    border-color: gray;
+    border-style:solid;
+    margin: 30px;
+    margin-left: 600px;
+
+}
+.Carrera2{
+    
+    border-width: 2px;
+    padding: 5px;
+    border-color: coral;
+    border-style:solid;
+    margin: 30px;
+    margin-left: 600px;
+
+}
+
+
+
+
+
+

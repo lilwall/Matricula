@@ -1,0 +1,9 @@
+C:\Users\Roberto\Downloads\Enrollogic-Update\Enrollogic-Update\Entidades\bin\Debug\Entidades.dll
+C:\Users\Roberto\Downloads\Enrollogic-Update\Enrollogic-Update\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Roberto\Downloads\Enrollogic-Update\Enrollogic-Update\Entidades\bin\Debug\Dapper.dll
+C:\Users\Roberto\Downloads\Enrollogic-Update\Enrollogic-Update\Entidades\bin\Debug\Dapper.xml
+C:\Users\Roberto\Downloads\Enrollogic-Update\Enrollogic-Update\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Roberto\Downloads\Enrollogic-Update\Enrollogic-Update\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Roberto\Downloads\Enrollogic-Update\Enrollogic-Update\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+C:\Users\Roberto\Downloads\Enrollogic-Update\Enrollogic-Update\Entidades\obj\Debug\Entidades.dll
+C:\Users\Roberto\Downloads\Enrollogic-Update\Enrollogic-Update\Entidades\obj\Debug\Entidades.pdb
