@@ -51,6 +51,7 @@
     <Compile Include="EstudianteLog.cs" />
     <Compile Include="InicioLog.cs" />
     <Compile Include="MateriaLog.cs" />
+    <Compile Include="MatricularLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelecCurso.cs" />
     <Compile Include="UsuarioLog.cs" />

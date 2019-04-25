@@ -73,6 +73,7 @@
     <Content Include="AdministrativoPrincipal.aspx" />
     <Content Include="AdminPrincipal.aspx" />
     <Content Include="AgregarMateria.aspx" />
+    <Content Include="AgregarNota.aspx" />
     <Content Include="Blueline-doc\css\font-awesome.min.css" />
     <Content Include="Blueline-doc\css\main.css" />
     <Content Include="Blueline-doc\css\normalize.min.css" />
@@ -224,6 +225,7 @@
     <Content Include="js\vendor\bootstrap.min.js" />
     <Content Include="js\vendor\jquery-2.2.4.min.js" />
     <Content Include="mail.php" />
+    <Content Include="Matricular.aspx" />
     <Content Include="Perfil.aspx" />
     <Content Include="Principal.aspx" />
     <Content Include="vendor\animate\animate.css" />
@@ -282,6 +284,13 @@
     <Compile Include="AgregarMateria.aspx.designer.cs">
       <DependentUpon>AgregarMateria.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AgregarNota.aspx.cs">
+      <DependentUpon>AgregarNota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarNota.aspx.designer.cs">
+      <DependentUpon>AgregarNota.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CrearAdministrativo.aspx.cs">
       <DependentUpon>CrearAdministrativo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -323,6 +332,13 @@
     </Compile>
     <Compile Include="InformacionPersonal.aspx.designer.cs">
       <DependentUpon>InformacionPersonal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Matricular.aspx.cs">
+      <DependentUpon>Matricular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Matricular.aspx.designer.cs">
+      <DependentUpon>Matricular.aspx</DependentUpon>
     </Compile>
     <Compile Include="Perfil.aspx.cs">
       <DependentUpon>Perfil.aspx</DependentUpon>
