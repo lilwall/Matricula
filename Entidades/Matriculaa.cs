@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Matricular
+    public class Matriculaa
     {
 
         public string Materia { set; get; }
@@ -14,7 +14,7 @@ namespace Entidades
         public int Nota { set; get; }
         public string Docente { set; get; }
 
-        public Matricular(string materia, string estudiante, int nota, string docente)
+        public Matriculaa(string materia, string estudiante, int nota, string docente)
         {
             Materia = materia;
             Estudiante = estudiante;

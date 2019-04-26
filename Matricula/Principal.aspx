@@ -172,28 +172,28 @@ Diseñamos carreras universitarias que cumplen con altos estándares de calidad,
 					<div class="col-lg-6 service-right">
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-6 single-services">
-								<span class="lnr lnr-poop"></span>
+								<span class="lnr lnr-pencil"></span>
 								<h2>Administración de negocios</h2>
 								<p>
 									El Bachiller en Administración de Negocios graduado de ULACIT cumple diversos propósitos, ya sea como experto contratado por una compañía o en la propia como emprendedor.  and the power of globalization.
 								</p>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 single-services">
-								<span class="lnr lnr-poop"></span>
+								<span class="lnr lnr-pencil"></span>
 								<h2>Ingeniería Informática</h2>
 								<p>
 									El Bachillerato en Ingeniería Informática que ofrece ULACIT, garantiza  la formación de un graduado, provisto de competencias disciplinares y auxiliares, que le permiten proponer soluciones en tecnologías de la información y la comunicación (TIC´s); identificando y brindando soporte, desde la fase diagnóstica, de ejecución y seguimiento,  a las necesidades y requerimientos de los usuarios finales.
 								</p>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 single-services">
-								<span class="lnr lnr-poop"></span>
+								<span class="lnr lnr-pencil"></span>
 								<h2>Derecho</h2>
 								<p>
 									El sistema jurídico influye en casi todos los aspectos de nuestra sociedad, desde adquirir un hogar hasta el cruzar la calle. Los abogados forman la columna vertebral de este sistema vital, por lo que ostentan posiciones de gran responsabilidad y están obligados a adherirse a un estricto código ético.
 								</p>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 single-services">
-								<span class="lnr lnr-poop"></span>
+								<span class="lnr lnr-pencil"></span>
 								<h2>Odontología</h2>
 								<p>
 									La carrera de Licenciatura en Odontología de ULACIT se caracteriza por la formación integral del estudiante, quien requiere competencias en la disciplina y las cuales se actualizan, en forma permanente, conforme al perfil del graduado de aquella.
@@ -290,13 +290,13 @@ Diseñamos carreras universitarias que cumplen con altos estándares de calidad,
 			<div class="container">
 				<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					<p class="footer-text m-0 text-white">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+					<p class="footer-text m-0 text-white">Sistema de desarrollado con el fin de facilitar las labores de matricula en /www.ulacit.ac.cr/" target="_blank">Ulacit</a></p>
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					<div class="footer-social d-flex align-items-center">
-						<a href="https://www.facebook.com/ulacitcostarica"><i class="fa fa-facebook"></i></a>
-						<a href="https://twitter.com/ulacitcostarica"><i class="fa fa-twitter"></i></a>
-						<a href="http://ulacit.eventbrite.com/"><i class="fa fa-dribbble"></i></a>
-						<a href="http://www.ulacit.ac.cr/blackboard/"><i class="fa fa-behance"></i></a>
+						<a href="https://www.facebook.com/ulacitcostarica/"><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/ulacitcostarica?lang=en"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.eventbrite.com/"><i class="fa fa-dribbble"></i></a>
+							<a href="https://bb9.ulacit.ac.cr/"><i class="fa fa-behance"></i></a>
 					</div>
 				</div>
 			</div>

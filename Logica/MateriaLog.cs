@@ -10,7 +10,7 @@ namespace Logica
 {
     public class MateriaLog
     {
-        string connString = "server=LAPTOP-BCKLRFPR\\MSSQLSERVER01 ; database=Enrollogic_DB ; integrated security = true";
+        string connString = "server=ROBERTO\\SQLEXPRESS ; database=Matricula ; integrated security = true";
         public static List<Materia> materias = new List<Materia>();
 
         public MateriaLog()

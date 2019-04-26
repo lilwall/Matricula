@@ -149,6 +149,7 @@
     <Content Include="css\pgwslider.min.css" />
     <Content Include="css\signin.css" />
     <Content Include="css\util.css" />
+    <Content Include="DocentePrincipal.aspx" />
     <Content Include="EditarMateria.aspx" />
     <Content Include="EstudiantePrincipal.aspx" />
     <Content Include="fonts\font-awesome-4.7.0\css\font-awesome.css" />
@@ -311,6 +312,13 @@
     </Compile>
     <Compile Include="CrearEstudiante.aspx.designer.cs">
       <DependentUpon>CrearEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocentePrincipal.aspx.cs">
+      <DependentUpon>DocentePrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocentePrincipal.aspx.designer.cs">
+      <DependentUpon>DocentePrincipal.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditarMateria.aspx.cs">
       <DependentUpon>EditarMateria.aspx</DependentUpon>

@@ -40,10 +40,10 @@ namespace Matricula
 
         protected void aceptarBtn(object sender, EventArgs e)
         {
-            if (aulaTxb.Text != "" && codigoTxb.Text != "" && descripcionTxb.Text != "" && nombreTxb.Text != "" && periodoLectivoTxb.Text != "")
+            if (aulaTxb.Text != "" && codigoTxb.Text != "" && descripcionTxb.Text != "" && nombreTxb.Text != "" && cuatrimestreTxb.Text != "")
             {
 
-                if (materialogica.CrearMateria(Convert.ToInt32(iDTxb.Text), codigoTxb.Text, nombreTxb.Text, carrerasDdl.SelectedItem.Text, periodoLectivoTxb.Text, descripcionTxb.Text, aulaTxb.Text, docentesDdl.SelectedItem.Value) != null)
+                if (materialogica.CrearMateria(Convert.ToInt32(iDTxb.Text), codigoTxb.Text, nombreTxb.Text, carrerasDdl.SelectedItem.Text, cuatrimestreTxb.Text, descripcionTxb.Text, aulaTxb.Text, docentesDdl.SelectedItem.Value) != null)
                 {
                     mensajeLbl.Text = "La Materia " + nombreTxb.Text + " ha sido creada correctamente.";
                 }

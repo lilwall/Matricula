@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EstudiantePrincipal.aspx.cs" Inherits="Matricula.EstudiantePrincipal" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DocentePrincipal.aspx.cs" Inherits="Matricula.DocentePrincipal" %>
 
 <!DOCTYPE html>
 
@@ -50,7 +50,7 @@
 							<nav class="hide">
 								<a href="index.html">Inicio</a>
 								<a href="generic.html">Generic</a>
-								<a href="InicioSesion.aspx">Cerrar Sesión</a>
+								<a href="elements.html">Cerrar Sesión</a>
 							</nav>
 							<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
 						</div>
@@ -134,7 +134,7 @@
 					<label class= "Carrera2 " for "Carrera"> <a href="Principal.aspx"> <h3> Información general </h3> </a> </label>
 				</div>
 				<div>
-					<label class= "Carrera2" for "Carrera"> <a href="Matricular.aspx"> <h3> Matricular </h3> </a> </label>
+					<label class= "Carrera2" for "Carrera"> <a href="AgregarNota.aspx"> <h3>Agregar Notas </h3> </a> </label>
 				</div>
 				
 

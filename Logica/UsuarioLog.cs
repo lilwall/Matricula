@@ -11,7 +11,7 @@ namespace Logica
 {
     public class UsuarioLog
     {
-        string connString = "server=desktop-b6efbeb\\sqlexpress ; database=Matricula ; integrated security = true";
+        string connString = "server=ROBERTO\\SQLEXPRESS ; database=Matricula ; integrated security = true";
         public static List<Usuario> usuarios;
 
         public UsuarioLog()
@@ -23,7 +23,7 @@ namespace Logica
         {
             using (SqlConnection conn = new SqlConnection(connString))
             {
-                usuarios = conn.Query<Usuario>("SELECT Id, Nombre, Apellido, Telefono, correo, Perfil, NombreUs, Contrasena from [Matricula].[dbo].[Usuario];").ToList();
+                usuarios = conn.Query<Usuario>("SELECT Id, Nombre, Apellido, Telefono, Correo, Perfil, NombreUs, Contrasena from [Matricula].[dbo].[Usuario];").ToList();
             }
         }
 

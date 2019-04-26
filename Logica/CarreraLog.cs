@@ -10,7 +10,7 @@ namespace Logica
 {
     public class CarreraLog
     {
-        string connString = "server=desktop-b6efbeb\\sqlexpress ; database=Matricula ; integrated security = true";
+        string connString = "server=ROBERTO\\SQLEXPRESS ; database=Matricula ; integrated security = true";
         public static List<Carrera> carreras = new List<Carrera>();
 
         public CarreraLog()

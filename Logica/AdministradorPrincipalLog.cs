@@ -10,7 +10,7 @@ namespace Logica
 {
         public class AdministradorPrincipalLog
         {
-            string connString = "server=desktop-b6efbeb\\sqlexpress ; database=Matricula ; integrated security = true";
+            string connString = "server=ROBERTO\\SQLEXPRESS ; database=Matricula ; integrated security = true";
         List<AdministradorPrincipal> admin;
             public AdministradorPrincipalLog()
             {

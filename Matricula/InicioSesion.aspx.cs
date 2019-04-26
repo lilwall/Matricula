@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Entidades;
 
+
 namespace Matricula
 {
     public partial class WebForm1 : System.Web.UI.Page
@@ -25,17 +26,17 @@ namespace Matricula
             {
                 if (usuario.Perfil == 1)
                 {
-                    Response.Redirect("");
+                    Response.Redirect("EstudiantePrincipal.aspx");
                 }
                 else
                 {
                     if (usuario.Perfil == 2)
                     {
-                        Response.Redirect("#");
+                        Response.Redirect("DocentePrincipal.aspx");
                     }
                     else
                     {
-                        Response.Redirect("");
+                        Response.Redirect("AdministrativoPrincipal.aspx");
                     }
                 }
             }
@@ -43,7 +44,7 @@ namespace Matricula
             {
                 if (admPri.buscarAdmPr(usuarioTxt.Text, contrasenaTxt.Text) != null)
                 {
-                    Response.Redirect("AdministradorPrincipal.aspx");
+                    Response.Redirect("AdmininPrincipal.aspx");
                 }
             }
         }

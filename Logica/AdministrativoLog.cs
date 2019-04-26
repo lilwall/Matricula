@@ -11,7 +11,7 @@ namespace Logica
 {
     public class AdministrativoLog
     {
-        string connString = "server=desktop-b6efbeb\\sqlexpress ; database=Matricula ; integrated security = true";
+        string connString = "server=ROBERTO\\SQLEXPRESS ; database=Matricula ; integrated security = true";
         public static List<Administrativo> adms;
 
         public AdministrativoLog()
