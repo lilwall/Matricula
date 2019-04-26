@@ -42,17 +42,30 @@
 						<div class="logo">
 							<a href="Principal.aspx"><img src="img/logo.png" alt=""></a>
 						</div>
-						<div class="main-menubar d-flex align-items-center">
-							<nav class="hide">
-								<a href="Principal.aspx">Inicio</a>
-								<a href="InformacionPersonal.aspx">Personal</a>
-								<a href="elements.html">Elements</a>
-							</nav>
-							<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
-						</div>
+						<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+ 
+ 
+}
+
+li {
+  display: inline;
+  padding:10px;
+  color:white;
+}
+</style>
+<ul>
+  <li><a href="Principal.aspx">Inicio</a></li>
+  <li><a href="InicioSesion.aspx">Cerrar Sesion</a></li>
+</ul>
 					</div>
 				</div>
 			</div>
+           
+
 		</header>
 		<!-- End Header Area -->
 		<!-- Start Banner Area -->

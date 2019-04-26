@@ -46,17 +46,28 @@
 						<div class="logo">
 							<a href="index.html"><img src="img/logo.png" alt=""></a>
 						</div>
-						<div class="main-menubar d-flex align-items-center">
-							<nav class="hide">
-								<a href="index.html">Inicio</a>
-								<a href="generic.html">Generic</a>
-								<a href="elements.html">Cerrar Sesión</a>
-							</nav>
-							<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
-						</div>
+						ul {
+  list-style-type: upper-roman;
+  margin: 0;
+  padding: 5px;
+  color: white;
+}
+
+li {
+  display: inline;
+  padding:10px;
+  color:crimson;
+}
+</style>
+<ul>
+    
+  <li><a href="Principal.aspx">Inicio</a></li>
+  <li><a href="InicioSesion.aspx">Cerrar Sesion</a></li>
+</ul>
 					</div>
 				</div>
 			</div>
+					
 		</header>
 		<!-- End Header Area -->
 		<!-- Start Banner Area -->

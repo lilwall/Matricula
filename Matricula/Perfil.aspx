@@ -42,14 +42,26 @@
 							<!--src cambiarlo por la imagen de la u y el index.html por aspx-->
 							<a href="index.html"><img src="img/logo.png" alt=""></a>
 						</div>
-						<div class="main-menubar d-flex align-items-center">
-							<nav class="hide">
-								<a href="index.html">Inicio</a>
-								<a href="generic.html">Perfil</a>
-								<a href="elements.html">Cerrar sesión</a>
-							</nav>
-							<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
-						</div>
+							<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+ 
+ 
+}
+
+li {
+  display: inline;
+  padding:10px;
+  color:white;
+}
+</style>
+<ul>
+  <li><a href="Principal.aspx">Inicio</a></li>
+    <li><a href="EstudiantePrincipal.aspx">Principal</a></li>
+  <li><a href="InicioSesion.aspx">Cerrar Sesion</a></li>
+</ul>
 					</div>
 				</div>
 			</div>

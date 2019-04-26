@@ -6,28 +6,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
      <title>Enrollogic</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css"/>
 <!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css"/>
 <!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main1.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main1.css"/>
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -41,13 +42,13 @@
 				</div>
 					
 
-					<div class="wrap-input100 validate-input" data-validate = "Usuario invalido">
-                        <asp:TextBox ID="usuarioTxt" runat="server" Height="64px" Width="600px">usuario</asp:TextBox>
+					<div class="wrap-input100 validate-input signInInput" data-validate = "Usuario invalido">
+                        <asp:TextBox ID="usuarioTxt" runat="server" Height="64px" Width="600px" placeHolder="Usuario"></asp:TextBox>
                         </span>
 					</div>
 
-					<div class="wrap-input100 rs1 validate-input" data-validate="La contraseña es requerida para continuar">
-                        <asp:TextBox ID="contrasenaTxt" runat="server" Height="64px" Width="600px" Font-Strikeout="False">contraseña</asp:TextBox>
+					<div class="wrap-input100 rs1 validate-input signInInput" data-validate="La contraseña es requerida para continuar">
+                        <asp:TextBox ID="contrasenaTxt" type="password" placeHolder="Contraseña" runat="server" Height="64px" Width="600px" Font-Strikeout="False"></asp:TextBox>
                         </span>
 					</div>
 
@@ -56,7 +57,7 @@
                        <a href="Principal.aspx"
 					</div>
 
-					<div class="text-center p-t-45 p-b-4">
+				<!--	<div class="text-center p-t-45 p-b-4">
 						<span class="txt1">
 							Olvido su?
 						</span>
@@ -64,7 +65,7 @@
 						<a href="#" class="txt2 hov1">
 							Usuario / Contraseña
 						</a>
-					</div>
+					</div> -->
 
 					<div class="text-center">
 						<span class="txt1">

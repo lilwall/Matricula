@@ -46,14 +46,26 @@
 						<div class="logo">
 							<a href="index.html"><img src="img/logo.png" alt=""></a>
 						</div>
-						<div class="main-menubar d-flex align-items-center">
-							<nav class="hide">
-								<a href="index.html">Inicio</a>
-								<a href="generic.html">Generic</a>
-								<a href="elements.html">Cerrar Sesión</a>
-							</nav>
-							<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
-						</div>
+						<style>
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding:0;
+ 
+ 
+}
+
+li {
+  display: inline;
+  padding:10px;
+  color:white;
+}
+</style>
+<ul>
+  <li><a href="Principal.aspx">Inicio</a>9</li>
+  <li><a href="InicioSesion.aspx">Cerrar Sesión</a></li>
+</ul>
+
 					</div>
 				</div>
 			</div>
@@ -90,10 +102,10 @@
 				
 
 				<div class="w3-content w3-section" style="max-width:500px">
-				  <img class="mySlides" src="1.png" style="width:100%">
-				  <img class="mySlides" src="2.png" style="width:100%">
-				  <img class="mySlides" src="3.png" style="width:100%">
-				  <img class="mySlides" src="4.png" style="width:100%">
+				  <img class="mySlides" src="1.jpeg" style="width:100%">
+				  <img class="mySlides" src="2.jpeg" style="width:100%">
+				  <img class="mySlides" src="3.jpeg" style="width:100%">
+				  <img class="mySlides" src="4.jpeg" style="width:100%">
 				</div>
 				
 				<script>

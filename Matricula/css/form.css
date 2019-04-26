@@ -76,8 +76,13 @@
 
 }
 
+.signInInputs{
+    margin: 0 1000px 0 1000px;
+}
 
+.body{
+    position: center;
 
-
+}
 
 
