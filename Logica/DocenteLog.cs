@@ -9,12 +9,12 @@ using Entidades;
 
 namespace Logica
 {
-    public class DocenteLogica
+    public class DocenteLog
     {
         string connString = "server=desktop-b6efbeb\\sqlexpress ; database=Matricula ; integrated security = true";
         public static List<Docente> docentes;
 
-        public DocenteLogica()
+        public DocenteLog()
         {
             verDocente();
         }
@@ -23,7 +23,7 @@ namespace Logica
         {
             using (SqlConnection conn = new SqlConnection(connString))
             {
-                docentes = conn.Query<Docente>("Select d.facultad, u.id, u.nombre, u.apellido, u.telefono, u.correo, u.perfil, u.nombreUs, u.contrasena from Docente d, Usuario u where tipo = 2;").ToList();
+                docentes = conn.Query<Docente>("Select d.facultad, u.id, u.nombre, u.apellido, u.telefono, u.correo, u.perfil, u.nombreUs, u.contrasena from Docente d, Usuario u where perfil = 2;").ToList();
             }
         }
 
@@ -31,7 +31,7 @@ namespace Logica
         {
             if (buscarDoc(id) == null)
             {
-                string sql = "insert into [Matricula].[dbo].[Usuario] ([Id], [Nombre], [Apellido] , [Correo] , [Telefono]  , [NombreUs], [Contrasena], [Perfil]) VALUES (@id, @nombre, @apellido, @correo, @telefono, @perfil, @nombreUs, @contrasena)";
+                string sql = "insert into [Matricula].[dbo].[Usuario] ([Id], [Nombre], [Apellido] , [Correo] , [Telefono]  , [Perfil], [NombreUs], [Contrasena]) VALUES (@id, @nombre, @apellido, @correo, @telefono, @perfil, @nombreUs, @contrasena)";
                 using (SqlConnection conn = new SqlConnection(connString))
                 {
                     var filasUsuario = conn.Execute(sql, new
@@ -46,7 +46,7 @@ namespace Logica
                         contrasena
                     });
 
-                    sql = "insert into [Matricula].[dbo].[Profesor] ([Id], [facultad]) VALUES (@id, @facultad)";
+                    sql = "insert into [Matricula].[dbo].[Docente] ([Id], [facultad]) VALUES (@id, @facultad)";
                     var filasDocente = conn.Execute(sql, new
                     {
                         id,
@@ -54,7 +54,7 @@ namespace Logica
                     });
                 }
                 verDocente();
-                Docente docente = new Docente(facultad, id, nombre, apellido,telefono, correo, nombreUs, contrasena, perfil);
+                Docente docente = new Docente(facultad, id, nombre, apellido,telefono, correo, perfil, nombreUs, contrasena);
                 return docente;
             }
             return null;
@@ -74,7 +74,7 @@ namespace Logica
 
         public void actualizarInfo(int id, int telefono, string correo)
         {
-            string sql = "update [Enrollogic_DB].[dbo].[Usuario] set  Telefono = @telefono, Correo = @correo where Id = @id";
+            string sql = "update [Matricula].[dbo].[Usuario] set  Telefono = @telefono, Correo = @correo where Id = @id";
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 var filas = conn.Execute(sql, new

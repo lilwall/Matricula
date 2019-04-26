@@ -23,7 +23,7 @@ namespace Logica
         {
             using (SqlConnection conn = new SqlConnection(connString))
             {
-                ests = conn.Query<Estudiante>("Select e.carrera, u.id, u.nombre, u.apellido,u.telefono, u.correo,  u.perfil, u.nombreUs, u.contrasena  from Estudiante e, Usuario u where tipo = 1; ").ToList();
+                ests = conn.Query<Estudiante>("Select e.carrera, u.id, u.nombre, u.apellido,u.telefono, u.correo,  u.perfil, u.nombreUs, u.contrasena  from Estudiante e, Usuario u where perfil = 1; ").ToList();
             }
         }
 
@@ -31,7 +31,7 @@ namespace Logica
         {
             if (buscarEstu(id) == null)
             {
-                string sql = "insert into [Matricula].[dbo].[Usuario] ([Id], [Nombre], [Apellido] , [Correo] , [Telefono]  , [NombreUs], [Contrasena], [Perfil]) VALUES (@id, @nombre, @apellido, @correo, @telefono, @perfil, @nombreUs, @contrasena)";
+                string sql = "insert into [Matricula].[dbo].[Usuario] ([Id], [Nombre], [Apellido] , [Correo] , [Telefono] ,[Perfil], [NombreUs], [Contrasena],) VALUES (@id, @nombre, @apellido, @correo, @telefono, @perfil, @nombreUs, @contrasena)";
                 using (SqlConnection conn = new SqlConnection(connString))
                 {
                     var filasUsuario = conn.Execute(sql, new
@@ -54,7 +54,7 @@ namespace Logica
                     });
                 }
                 verEstuds();
-                Estudiante estudiante = new Estudiante(carrera, id, nombre, apellido, telefono, correo, nombreUs, contrasena, perfil);
+                Estudiante estudiante = new Estudiante(carrera, id, nombre, apellido, telefono, correo, perfil, nombreUs, contrasena);
                 return estudiante;
             }
             return null;

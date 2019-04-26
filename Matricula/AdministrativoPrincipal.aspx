@@ -131,13 +131,13 @@
 					<div class="column">
 					<label class= "Carrera" for "Carrera"> <a href="#"> <h3> Carreras </h3> </a> </label>
 					<div>
-					<label class= "Carrera" for "Carrera"> <a href="AgregarCarrera.aspx"> <h3> Agregar carreras </h3> </a> </label>
+					<label class= "Carrera" for "Carrera"> <a href="AgregarCarrera.aspx"> <h3> Agregar Carrera </h3> </a> </label>
 				</div>
 				<div>
-					<label class= "Carrera" for "Carrera"> <a href="AgregarMateria.aspx"> <h3> Agregar Materias </h3> </a> </label>
+					<label class= "Carrera" for "Carrera"> <a href="AgregarMateria.aspx"> <h3> Agregar Materia </h3> </a> </label>
 				</div>
 				<div>
-					<label class= "Carrera" for "Carrera"> <a href="EditarMateria.aspx"> <h3> Editar materia </h3> </a> </label>
+					<label class= "Carrera" for "Carrera"> <a href="EditarMateria.aspx"> <h3> Editar Materia </h3> </a> </label>
 				</div>
 
 				</div>

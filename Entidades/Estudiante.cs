@@ -15,7 +15,7 @@ namespace Entidades
 
         public string Carrera { set; get; }
 
-        public Estudiante(string carrera, int id, string nombre, string apellido, int telefono, string correo, string nombreUs, string contrasena, int perfil) :base( id,  nombre,  apellido,  telefono,  correo,  nombreUs,  contrasena,  perfil) 
+        public Estudiante(string carrera, int id, string nombre, string apellido, int telefono, string correo, int perfil, string nombreUs, string contrasena) :base( id,  nombre,  apellido,  telefono,  correo,  perfil,  nombreUs,  contrasena) 
         {
             Carrera = carrera;
         }

@@ -27,11 +27,11 @@ namespace Logica
             }
         }
 
-        public Administrativo crearAdm(string puesto, int id, string nombre, string apellido, string telefono, int correo, int perfil, string nombreUs, string contrasena)
+        public Administrativo crearAdm(string puesto, int id, string nombre, string apellido, int telefono, string correo, int perfil, string nombreUs, string contrasena)
         {
             if (buscarEstu(id) == null)
             {
-                string sql = "insert into [Matricula].[dbo].[Usuario] ([Id], [Nombre], [Apellido] , [Telefono] , [Correo] , [NombreUs], [Contrasena] , [Perfil]) VALUES (@id, @nombre, @apellido, @correo, @telefono, @perfil, @nombreUs, @contrasena)";
+                string sql = "insert into [Matricula].[dbo].[Usuario] ([Id], [Nombre], [Apellido] , [Telefono] , [Correo] , [Perfil], [NombreUs], [Contrasena] ) VALUES (@id, @nombre, @apellido, @telefono, @correo,  @perfil, @nombreUs, @contrasena)";
                 using (SqlConnection conn = new SqlConnection(connString))
                 {
                     var filasUsuario = conn.Execute(sql, new
@@ -41,9 +41,10 @@ namespace Logica
                         apellido,
                         telefono,
                         correo,
+                        perfil,
                         nombreUs,
-                        contrasena,
-                        perfil
+                        contrasena
+                        
                     });
 
                     sql = "insert into [Matricula].[dbo].[Administrativo] ([Id], [puesto]) VALUES (@id, @puesto)";
@@ -54,7 +55,7 @@ namespace Logica
                     });
                 }
                 verAdm();
-                Administrativo administrativo = new Administrativo(puesto, id, nombre, apellido, correo, telefono,   nombreUs, contrasena, perfil);
+                Administrativo administrativo = new Administrativo(puesto, id, nombre, apellido, telefono, correo,  perfil,  nombreUs, contrasena);
                 return administrativo;
             }
             return null;

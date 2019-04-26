@@ -8,11 +8,11 @@ using System.Data.SqlClient;
 using Dapper;
 namespace Logica
 {
-        public class AdministradorPrincipalLogica
+        public class AdministradorPrincipalLog
         {
             string connString = "server=desktop-b6efbeb\\sqlexpress ; database=Matricula ; integrated security = true";
         List<AdministradorPrincipal> admin;
-            public AdministradorPrincipalLogica()
+            public AdministradorPrincipalLog()
             {
 
             }

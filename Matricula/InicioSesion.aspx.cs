@@ -12,7 +12,7 @@ namespace Matricula
     {
 
         Logica.InicioLog inicio = new Logica.InicioLog();
-        Logica.AdministradorPrincipalLogica admPri = new Logica.AdministradorPrincipalLogica();
+        Logica.AdministradorPrincipalLog admPri = new Logica.AdministradorPrincipalLog();
         protected void Page_Load(object sender, EventArgs e)
         {
 

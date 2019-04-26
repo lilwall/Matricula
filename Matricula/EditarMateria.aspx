@@ -88,18 +88,34 @@
 			
 			<!-- Search input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="Buscar">Curso a buscar</label>
-			  <div class="col-md-4">
-				<input id="Buscar" name="Buscar" type="search" placeholder="Curso a buscar" class="form-control input-md" required="">
-				
-			  </div>
+                <table>
+                    <tr>
+                        <td>
+                            <label class="col-md-4 control-label" for="cursoBusTxb">  Id del Curso a buscar:</label>
+                        </td>
+                        <td>
+                            <div class="col-md-4">
+                                <asp:TextBox ID="cursoIdTxb"  class="form-control input-md"  runat="server"></asp:TextBox>
+                            </div>
+                        </td>
+                        <td>
+                            <asp:Button ID="buscarBtn"  name="Buscar" class="btn btn-primary" runat="server" Text="Buscar Curso" OnClick="BuscarBtn" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <asp:Label ID="buscarLbl" runat="server" Text="" Font-Size="Medium" Font-Bold="True" ForeColor="Red"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+			 
 			</div>
 			
 			<!-- Text input-->
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="ID">ID</label>  
 			  <div class="col-md-4">
-			  <input id="ID" name="ID" type="text" placeholder="ID" class="form-control input-md" required="">
+			  <asp:TextBox ID="iDTxb" name="iDTxb" type="text" placeholder="Digite el ID de carrera" class="form-control input-md" runat="server" ReadOnly="True"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -108,7 +124,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="textinput">Código</label>  
 			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="Código" class="form-control input-md" required="">
+			  <asp:TextBox ID="codigoTxb" name="codigoCarretaTxb" type="text" placeholder="Digite el codigo de carrera" class="form-control input-md" runat="server" ReadOnly="True"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -117,7 +133,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="textinput">Nombre</label>  
 			  <div class="col-md-4">
-			  <input id="textinput" name="textinput" type="text" placeholder="Nombre" class="form-control input-md" required="">
+			  <asp:TextBox ID="nombreTxb" name="nombreTxb" type="text" placeholder="Digite el nombre de carrera" class="form-control input-md" runat="server" ReadOnly="True"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -126,7 +142,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Carrera">Carrera</label>  
 			  <div class="col-md-4">
-			  <input id="Carrera" name="Carrera" type="text" placeholder="Carrera" class="form-control input-md" required="">
+			  <asp:TextBox ID="carreraTxb" name="carreraTxb" type="text" placeholder="Digite el nombre de carrera" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -135,7 +151,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Cuatrimestre">Cuatrimestre</label>  
 			  <div class="col-md-4">
-			  <input id="Cuatrimestre" name="Cuatrimestre" type="text" placeholder="Cuatrimestre" class="form-control input-md" required="">
+			  <asp:TextBox ID="cuatrimestreTxb" name="cuatrimestreTxb" type="text" placeholder=" Cuatrimestre" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -144,24 +160,24 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Descripcion">Descripción</label>
 			  <div class="col-md-4">                     
-				<textarea class="form-control" id="Descripcion" name="Descripcion"></textarea>
+				<asp:TextBox ID="descripcionTxb" name="descripcionTxb" type="text" placeholder="Descripción" class="form-control input-md" runat="server"></asp:TextBox>
 			  </div>
 			</div>
 			
 			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="Aula">Aula</label>  
+			  <label class="col-md-4 control-label" for="Aula">Numero de aula</label>  
 			  <div class="col-md-4">
-			  <input id="Aula" name="Aula" type="text" placeholder="Aula" class="form-control input-md" required="">
+			  <asp:TextBox ID="aulaTxb" name="aulaTxb" type="text" placeholder=" Digite el numero Aula" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
 			
 			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="Profesor">Profesor</label>  
+			  <label class="col-md-4 control-label" for="Docente">Docente</label>  
 			  <div class="col-md-4">
-			  <input id="Profesor" name="Profesor" type="text" placeholder="Profesor" class="form-control input-md" required="">
+			  <asp:DropDownList ID="docentesDdl" runat="server" class="form-control input-md"></asp:DropDownList>
 				
 			  </div>
 			</div>
@@ -170,11 +186,11 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="button1id"></label>
 			  <div class="col-md-8">
-				<button id="button1id" name="button1id" class="btn btn-success">Aceptar</button>
-				<button id="button2id" name="button2id" class="btn btn-danger">Cancelar</button>
+				<asp:Button ID="button1id" name="aceptarBtn" class="btn btn-succes" runat="server" Text="Aceptar" OnClick="aceptarBtn" />
+                    <asp:Button ID="button2id" name="cancelarBtn" class="btn btn-danger" runat="server" Text="Cancelar" OnClick="cancelarBtn" />
 			  </div>
 			</div>
-			
+			<asp:Label ID="mensajeLbl" runat="server" Text="" Font-Bold="True" ForeColor="Red" Font-Size="Medium"></asp:Label>
 			</fieldset>
 			</form>
 			

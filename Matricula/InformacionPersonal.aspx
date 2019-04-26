@@ -86,23 +86,26 @@
 					<br>
 					<form action="#">
 						<div class="mt-10">
-							<input type="text" name="ID" placeholder="ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'" required class="single-input">
+							
+                            <asp:TextBox ID="idTxb" placeholder="ID" name="ID" type="text"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'ID'" required class="single-input" runat="server"></asp:TextBox>
 						</div>
 						<div class="mt-10">
-							<input type="text" name="  Nombre" placeholder="  Nombre" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Nombre'" required class="single-input">
+                            <asp:TextBox ID="nombreTxb" placeholder="Nombre" name="Nombre" type="text"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre'" required class="single-input" runat="server"></asp:TextBox>
 						</div>
 						<div class="mt-10">
-							<input type="text" name="Apellido" placeholder="Apellido " onfocus="this.placeholder = ''" onblur="this.placeholder =  'Apellido'" required class="single-input">
+                            <asp:TextBox ID="apellidoTxb" placeholder="Apellido" name="Apellido" type="text"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Apellido'" required class="single-input" runat="server"></asp:TextBox>
 						</div>
 						<div class="mt-10">
-							<input type="Correo Electronico" name="Correo Electronico" placeholder="Correo Electronico" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo'" required class="single-input">
+                            
+                            <asp:TextBox ID="telefonoTxb" placeholder="Telefono" name="Telefono" type="text"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefono'" required class="single-input" runat="server"></asp:TextBox>
 						</div>
 						<div class="mt-10">
-								<input type=" Telefono" name=" Telefono" placeholder="Telefono " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefono'" required class="single-input">
+								<asp:TextBox ID="correoTxb" placeholder="Correo" name="Correo" type="text"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo'" required class="single-input" runat="server"></asp:TextBox>
+                            
 							</div>
 						<div class="input-group-icon mt-10">
 							<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-							<input type="text" name="Dirección" placeholder="Dirección" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Dirección'" required class="single-input">
+                            <asp:TextBox ID="direccionTxb" placeholder="Dirección" name="Dirección" type="text"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Dirección'" required class="single-input" runat="server"></asp:TextBox>
 						</div>
 						<div class="input-group-icon mt-10">
 							<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
@@ -233,7 +236,9 @@
 											<div class="Boton-Aceptar">
 											  <label class="col-md-4 control-label" for=""></label>
 											  <div class="col-md-4">
-												<button id="" name="" class="btn btn-success">Aceptar</button>
+                                                  <asp:Button ID="actualizarBtn" runat="server" Text="Actualizar"  class="btn btn-success" OnClick="ActualizarBtn"/>
+                                                    <asp:Button ID="Cancelar" runat="server" Text="Cancelar"  class="btn btn-dangery"/><br />
+                                                     <asp:Label ID="mensajeLbl" runat="server" Text="" Font-Bold="True" Font-Size="Medium" ForeColor="Red"></asp:Label>
 											  </div>
 											</div>
 											

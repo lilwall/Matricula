@@ -92,7 +92,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="ID">ID</label>  
 			  <div class="col-md-4">
-			  <input id="ID" name="ID" type="text" placeholder="ID" class="form-control input-md" required="">
+              <asp:TextBox ID="iDTxb" name="iDTxb" type="text" placeholder="Digite el ID de carrera" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -101,16 +101,15 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Codigo">Código</label>  
 			  <div class="col-md-4">
-			  <input id="Codigo" name="Codigo" type="text" placeholder="Código" class="form-control input-md" required="">
-				
+               <asp:TextBox ID="codigoTxb" name="codigoCarretaTxb" type="text" placeholder="Digite el codigo de carrera" class="form-control input-md" runat="server"></asp:TextBox>
 			  </div>
 			</div>
 			
 			<!-- Text input-->
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Nombre">Nombre</label>  
-			  <div class="col-md-4">
-			  <input id="Nombre" name="Nombre" type="text" placeholder="Nombre" class="form-control input-md" required="">
+			  <div class="col-md-4">			  
+              <asp:TextBox ID="nombreTxb" name="nombreTxb" type="text" placeholder="Digite el nombre de carrera" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -119,16 +118,15 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Carrera">Carrera</label>  
 			  <div class="col-md-4">
-			  <input id="Carrera" name="Carrera" type="text" placeholder="Carrera" class="form-control input-md" required="">
-				
+				<asp:DropDownList ID="carrerasDdl" runat="server" class="form-control input-md"></asp:DropDownList>
 			  </div>
 			</div>
 			<div>
 			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="Periodo lectivo">Periodo lectivo</label>  
+			  <label class="col-md-4 control-label" for="Cuatrimestre">Cuatrimestre</label>  
 			  <div class="col-md-4">
-			  <input id="Periodo lectivo" name="Periodo lectivo" type="text" placeholder="Periodo lectivo" class="form-control input-md" required="">
+                <asp:TextBox ID="cuatrimestreTxb" name="cuatrimestreTxb" type="text" placeholder=" Cuatrimestre" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -137,7 +135,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Descripcion">Descripción</label>
 			  <div class="col-md-4">                     
-				<textarea class="form-control" id="Descripcion" name="Descripcion"></textarea>
+                <asp:TextBox ID="descripcionTxb" name="descripcionTxb" type="text" placeholder="Descripción" class="form-control input-md" runat="server"></asp:TextBox>
 			  </div>
 			</div>
 			
@@ -145,16 +143,16 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Aula">Número de aula</label>  
 			  <div class="col-md-4">
-			  <input id="Aula" name="Aula" type="text" placeholder="Número de aula" class="form-control input-md" required="">
+                   <asp:TextBox ID="aulaTxb" name="aulaTxb" type="text" placeholder=" Digite el numero Aula" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
 			
 			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="Profesor">Profesor</label>  
+			  <label class="col-md-4 control-label" for="Docente">Docente</label>  
 			  <div class="col-md-4">
-			  <input id="Profesor" name="Profesor" type="text" placeholder="Profesor" class="form-control input-md" required="">
+                  <asp:DropDownList ID="docentesDdl" runat="server" class="form-control input-md"></asp:DropDownList>
 				
 			  </div>
 			</div>
@@ -164,11 +162,11 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="button1id"></label>
 			  <div class="col-md-8">
-				<button id="button1id" name="button1id" class="btn btn-success">Aceptar</button>
-				<button id="button2id" name="button2id" class="btn btn-danger">Cancelar</button>
+                  <asp:Button ID="button1id" name="aceptarBtn" class="btn btn-succes" runat="server" Text="Aceptar" OnClick="aceptarBtn" />
+                  <asp:Button ID="button2id" name="cancelarBtn" class="btn btn-danger" runat="server" Text="Cancelar" OnClick="cancelarBtn" />
 			  </div>
 			</div>
-			
+			<asp:Label ID="mensajeLbl" runat="server" Text="" Font-Bold="True" ForeColor="Red" Font-Size="Medium"></asp:Label>
 			</fieldset>
 			</form>
 			

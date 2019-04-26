@@ -100,7 +100,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="ID">ID</label>  
 			  <div class="col-md-4">
-			  <input id="ID" name="ID" type="text" placeholder="ID" class="form-control input-md" required="">
+			  <asp:TextBox ID="idTxb" name="ID" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -109,7 +109,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Nombre">Nombre</label>  
 			  <div class="col-md-4">
-			  <input id="Nombre" name="Nombre" type="text" placeholder="Nombre" class="form-control input-md" required="">
+			  <asp:TextBox ID="nombreTxb" name="nombreTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -118,7 +118,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Apellido">Apellido</label>  
 			  <div class="col-md-4">
-			  <input id="Apellido" name="Apellido" type="text" placeholder="Apellido" class="form-control input-md" required="">
+			  <asp:TextBox ID="apellidosTxb" name="apellidosTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -127,7 +127,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Telefono">Telefono</label>  
 			  <div class="col-md-4">
-			  <input id="Telefono" name="Telefono" type="text" placeholder="Telefono" class="form-control input-md" required="">
+			  <asp:TextBox ID="telefonoTxb" name="telefonoTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -136,29 +136,29 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Correo"> Correo</label>  
 			  <div class="col-md-4">
-			  <input id="Correo " name="Correo " type="text" placeholder="Correo electronico" class="form-control input-md" required="">
+			  <asp:TextBox ID="correoTxb" name="correoTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Usuario"> Usuario</label>  
 			  <div class="col-md-4">
-			  <input id="Usuario " name="Usuario " type="text" placeholder="Usuario" class="form-control input-md" required="">
+			  <asp:TextBox ID="usuarioTxb" name="usuarioTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="contrasena">Contraseña</label>
 				<div class="col-md-4">
-					<input id="contrasena" name="contrasena" type="password" placeholder="Contraseña" class="form-control input-md" required="">
+					<asp:TextBox ID="contrasenaTxb" name="contrasenaTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 					
 				</div>
 			</div>
 			<!-- Text input-->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="Aula">Carrera</label>  
+			  <label class="col-md-4 control-label" for="Carrera">Carrera</label>  
 			  <div class="col-md-4">
-			  <input id="Carrera" name="Carrera" type="text" placeholder="Carrera" class="form-control input-md" required="">
+			  <asp:TextBox ID="carreraTxb" name="carreraTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -170,7 +170,8 @@
 				<div class="form-group">
 					<label class="col-md-4 control-label" for="singlebutton"></label>
 					<div class="col-md-4">
-						<button id="singlebutton" name="singlebutton" class="btn btn-primary">Crear</button>
+						<asp:Button ID="crearbtn" name="crearbtn" runat="server" Text="Crear Estudiante" class="btn btn-primary" OnClick="crearEstudianteBtn" /><br />
+                        <asp:Label ID="mensajeLbl" runat="server" Text="" Font-Bold="True" Font-Size="Medium" ForeColor="Red"></asp:Label>
 					</div>
 				</div>
 				

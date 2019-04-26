@@ -12,14 +12,14 @@ namespace Entidades
         public string Materia { set; get; }
         public string Estudiante { set; get; }
         public int Nota { set; get; }
-        public string Profesor { set; get; }
+        public string Docente { set; get; }
 
-        public Matricular(string materia, string estudiante, int nota, string profesor)
+        public Matricular(string materia, string estudiante, int nota, string docente)
         {
             Materia = materia;
             Estudiante = estudiante;
             Nota = nota;
-            Profesor = profesor;
+            Docente = docente;
         }
     }
 }

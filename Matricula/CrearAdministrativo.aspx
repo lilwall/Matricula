@@ -91,7 +91,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="ID">ID</label>  
 				<div class="col-md-4">
-				<input id="ID" name="ID" type="text" placeholder="ID" class="form-control input-md" required="">
+                    <asp:TextBox ID="idTxb" name="ID" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 					
 				</div>
 			</div>
@@ -100,7 +100,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="Nombre">Nombre</label>  
 				<div class="col-md-4">
-				<input id="Nombre" name="Nombre" type="text" placeholder="Nombre" class="form-control input-md" required="">
+                    <asp:TextBox ID="nombreTxb" name="nombreTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 					
 				</div>
 			</div>
@@ -109,7 +109,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="Apellidos">Apellidos</label>  
 				<div class="col-md-4">
-				<input id="Apellidos" name="Apellidos" type="text" placeholder="Apellidos" class="form-control input-md" required="">
+                    <asp:TextBox ID="apellidosTxb" name="apellidosTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 					
 				</div>
 			</div>
@@ -118,7 +118,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="Telefono">Telefono</label>  
 				<div class="col-md-4">
-				<input id="Telefono" name="Telefono" type="text" placeholder="Telefono" class="form-control input-md" required="">
+                    <asp:TextBox ID="telefonoTxb" name="telefonoTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 					
 				</div>
 			</div>
@@ -127,8 +127,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="Correo">Correo</label>  
 				<div class="col-md-4">
-				<input id="Correo" name="Correo" type="text" placeholder="Correo electronico" class="form-control input-md" required="">
-					
+					<asp:TextBox ID="correoTxb" name="correoTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 				</div>
 			</div>
 			
@@ -136,7 +135,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="usuario">Usuario</label>  
 				<div class="col-md-4">
-				<input id="usuario" name="usuario" type="text" placeholder="Usuario" class="form-control input-md" required="">
+                    <asp:TextBox ID="usuarioTxb" name="usuarioTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 					
 				</div>
 			</div>
@@ -145,7 +144,7 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="contrasena">Contraseña</label>
 				<div class="col-md-4">
-					<input id="contrasena" name="contrasena" type="password" placeholder="Contraseña" class="form-control input-md" required="">
+                    <asp:TextBox ID="contrasenaTxb" name="contrasenaTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 					
 				</div>
 			</div>
@@ -154,16 +153,17 @@
 			<div class="form-group">
 				<label class="col-md-4 control-label" for="Puesto">Puesto</label>  
 				<div class="col-md-4">
-				<input id="Puesto" name="Puesto" type="text" placeholder="Puesto" class="form-control input-md" required="">
+                    <asp:TextBox ID="puestoTxb" name="puestoTxb" type="text" class="form-control input-md" runat="server"></asp:TextBox>
 					
 				</div>
 			</div>
 			
 			<!-- Button -->
 			<div class="form-group">
-				<label class="col-md-4 control-label" for="Crearbtn"></label>
+				<label class="col-md-4 control-label" for="crearbtn"></label>
 				<div class="col-md-4">
-					<button id="Crearbtn" name="Crearbtn" class="btn btn-primary">Crear</button>
+                    <asp:Button ID="crearbtn" name="crearbtn" runat="server" Text="Crear Administrativo" class="btn btn-primary" OnClick="crearAdministrativoBtn" /><br />
+                    <asp:Label ID="mensajeLbl" runat="server" Text="" Font-Bold="True" Font-Size="Medium" ForeColor="Red"></asp:Label>
 				</div>
 			</div>
 			

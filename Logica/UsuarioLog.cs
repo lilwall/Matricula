@@ -23,7 +23,7 @@ namespace Logica
         {
             using (SqlConnection conn = new SqlConnection(connString))
             {
-                usuarios = conn.Query<Usuario>("SELECT Id, Nombre, Apellido, Telefono, correo, NombreUs, Contrasena, Perfil from [Matricula].[dbo].[Usuario];").ToList();
+                usuarios = conn.Query<Usuario>("SELECT Id, Nombre, Apellido, Telefono, correo, Perfil, NombreUs, Contrasena from [Matricula].[dbo].[Usuario];").ToList();
             }
         }
 

@@ -90,7 +90,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="ID">ID</label>  
 			  <div class="col-md-4">
-			  <input id="ID" name="ID" type="text" placeholder="ID" class="form-control input-md" required="">
+              <asp:TextBox ID="idTxb" name="idTxb" type="text" placeholder="Digite el ID de carrera" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -99,7 +99,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Nombre">Nombre</label>  
 			  <div class="col-md-4">
-			  <input id="Nombre" name="Nombre" type="text" placeholder="Nombre" class="form-control input-md" required="">
+              <asp:TextBox ID="nombreTxb" name="nombreTxb" type="text" placeholder="Digite el nombre de carrera" class="form-control input-md" runat="server"></asp:TextBox>
 				
 			  </div>
 			</div>
@@ -108,16 +108,16 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="Descripción">Descripción</label>
 			  <div class="col-md-4">                     
-				<textarea class="form-control" id="Descripción" name="Descripción"></textarea>
+                <asp:TextBox ID="descripcionTxb" name="descripcionTxb" type="text" placeholder="Digite la descripción de la carrera" class="form-control" runat="server"></asp:TextBox>
 			  </div>
 			</div>
 			
 			<!-- Button (Double) -->
 			<div class="form-group">
-			  <label class="col-md-4 control-label" for="button1"></label>
+			  <label class="col-md-4 control-label" for="aceptarBtn"></label>
 			  <div class="col-md-8">
-				<button id="button1" name="button1" class="btn btn-success">Aceptar</button>
-				<button id="button2" name="button2" class="btn btn-danger">Cancelar</button>
+                  <asp:Button ID="aceptarBtn" name="aceptarBtn" class="btn btn-success" runat="server" Text="Aceptar" OnClick="aceptarBtn" />
+                  <asp:Button ID="cancelarBtn" name="cancelarBtn" class="btn btn-danger" runat="server" Text="Cancelar" OnClick="cancelarBtn" />
 			  </div>
 			</div>
 			

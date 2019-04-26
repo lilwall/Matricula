@@ -13,20 +13,22 @@ namespace Entidades
         public string Apellido { set; get; }
         public int Telefono { set; get; }
         public string Correo { set; get; }
+        public int Perfil { set; get; }
         public string NombreUs { set; get; }
         public string Contrasena { set; get; }
-        public int Perfil { set; get; }
+        
 
-        public Usuario(int id, string nombre, string apellido, int telefono, string correo, string nombreUs, string contrasena, int perfil)
+        public Usuario(int id, string nombre, string apellido, int telefono, string correo, int perfil, string nombreUs, string contrasena)
         {
             Id = id;
             Nombre = nombre;
             Apellido = apellido;
             Telefono = telefono;
             Correo = correo;
+            Perfil = perfil;
             NombreUs = nombreUs;
             Contrasena = contrasena;
-            Perfil = perfil;
+            
         }
     }
 }
